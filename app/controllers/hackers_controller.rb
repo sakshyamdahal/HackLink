@@ -19,4 +19,10 @@ class HackersController < ApplicationController
 
   def destroy
   end
+
+  def login
+  end
+
+  def register
+  end
 end
