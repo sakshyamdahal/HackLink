@@ -1,19 +1,5 @@
 Rails.application.routes.draw do
-  get "sessions/new"
-  get "sessions/create"
-  get "sessions/destroy"
-  get "hackers/index"
-  get "hackers/new"
-  get "hackers/show"
-  get "hackers/create"
-  get "hackers/edit"
-  get "hackers/update"
-  get "hackers/destroy"
-<<<<<<< HEAD
-  get "hackers/register"
-  get "hackers/login"
-=======
-
+  
   resources :hackers do
   end
 
@@ -24,7 +10,7 @@ Rails.application.routes.draw do
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/signup', to: 'hackers#new', via: 'get'
->>>>>>> sd-branch
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
