@@ -11,11 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141019023005) do
+ActiveRecord::Schema.define(version: 20141019033253) do
 
   create_table "hackers", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "email"
+    t.string   "username"
+    t.string   "contact"
+    t.string   "gender"
+    t.string   "password_digest"
+    t.string   "remember_token"
   end
+
+  add_index "hackers", ["remember_token"], name: "index_hackers_on_remember_token"
+  add_index "hackers", ["username"], name: "index_hackers_on_username"
 
 end

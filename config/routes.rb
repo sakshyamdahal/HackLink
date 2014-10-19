@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "sessions/new"
+  get "sessions/create"
+  get "sessions/destroy"
   get "hackers/index"
   get "hackers/new"
   get "hackers/show"
@@ -6,6 +9,17 @@ Rails.application.routes.draw do
   get "hackers/edit"
   get "hackers/update"
   get "hackers/destroy"
+
+  resources :hackers do
+  end
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  root 'hackers#index'
+
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/signup', to: 'hackers#new', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
