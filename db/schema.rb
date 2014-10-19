@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141019023645) do
 
   create_table "languages", force: true do |t|
     t.string   "language"
+=======
+ActiveRecord::Schema.define(version: 20141019023005) do
+
+  create_table "hackers", force: true do |t|
+>>>>>>> 8c45344156da26a9e2354c4b4de8567d5cca88a5
     t.datetime "created_at"
     t.datetime "updated_at"
   end
