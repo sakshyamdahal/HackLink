@@ -1,0 +1,4 @@
+== README
+A web app based on ruby on rails that to bring all the hackers together so that they can work together in hackathons and build great softwares for the world.
+
+# Let's hack together
