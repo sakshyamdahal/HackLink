@@ -40,13 +40,12 @@ class HackersController < ApplicationController
   def destroy
   end
 
-<<<<<<< HEAD
   def login
   end
 
   def register
   end
-=======
+
   private
     def hacker_params
       params.require(:hacker).permit(:name, :username, :password, :password_confirmation)
@@ -56,5 +55,5 @@ class HackersController < ApplicationController
       @hacker = Hacker.find(params[:id])
       redirect_to(root_url) unless current_hacker?(@hacker)
     end
->>>>>>> sd-branch
+
 end
