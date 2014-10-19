@@ -11,20 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20141019023645) do
-
-  create_table "languages", force: true do |t|
-    t.string   "language"
-=======
-ActiveRecord::Schema.define(version: 20141019023005) do
-=======
 ActiveRecord::Schema.define(version: 20141019033253) do
->>>>>>> sd-branch
 
   create_table "hackers", force: true do |t|
->>>>>>> 8c45344156da26a9e2354c4b4de8567d5cca88a5
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
@@ -38,5 +27,11 @@ ActiveRecord::Schema.define(version: 20141019033253) do
 
   add_index "hackers", ["remember_token"], name: "index_hackers_on_remember_token"
   add_index "hackers", ["username"], name: "index_hackers_on_username"
+
+  create_table "languages", force: true do |t|
+    t.string   "language"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
