@@ -1,2 +1,72 @@
-<h1>Hackers#new</h1>
-<p>Find me in app/views/hackers/new.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Register - HackLink</title>
+
+    <link rel="stylesheet" href="/stylesheets/register-hackers-style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Social Navigation</title>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div id="register-form">
+
+        <h3>Register</h3>
+
+        <fieldset>
+
+            <form action="/hackers/register" method="get">
+                <input type="text" required value="First Name" onBlur="if(this.value=='')this.value='First Name'" onFocus="if(this.value=='First Name')this.value='' ">
+
+                <input type="text" required value="Last Name" onBlur="if(this.value=='')this.value='Last name'" onFocus="if(this.value=='Last Name')this.value='' ">
+
+                <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
+
+                <input type="text" required value="User-Id" onBlur="if(this.value=='')this.value='User-Id'" onFocus="if(this.value=='User-Id')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
+                
+                <input type="text" required value="Phone Number" onBlur="if(this.value=='')this.value='Phone Number'" onFocus="if(this.value=='Phone Number')this.value='' ">
+
+                <input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
+                <select name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br/>
+                <input type="submit" value="Register">
+
+                <footer class="clearfix">
+
+
+                </footer>
+
+            </form>
+
+        </fieldset>
+
+    </div> <!-- end login-form -->
+
+</body>
+</html>
+
+</body>
+
+</html>
